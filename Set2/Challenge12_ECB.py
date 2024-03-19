@@ -3,7 +3,7 @@ import random
 
 from Crypto.Cipher import AES
 
-from Set2.Challenge9_PKCS import PKCS_pad
+from Challenge9_PKCS import PKCS_pad
 
 
 def randomKeyGen():
