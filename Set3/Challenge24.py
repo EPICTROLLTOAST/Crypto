@@ -1,7 +1,7 @@
 import os
 import random
 
-from Crypto.Random import get_random_bytes
+from Cryptodome.Random import get_random_bytes
 
 from Set3.Challenge21 import mersenne_twister
 

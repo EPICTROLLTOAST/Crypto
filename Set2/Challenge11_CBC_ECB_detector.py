@@ -1,7 +1,7 @@
 import itertools
 import random
 
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 
 from Set2.Challenge9_PKCS import PKCS_pad
 from scipy.stats import shapiro

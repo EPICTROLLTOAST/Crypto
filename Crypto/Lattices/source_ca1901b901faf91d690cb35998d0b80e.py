@@ -1,4 +1,4 @@
-from Crypto.Util.number import getPrime, inverse, bytes_to_long, long_to_bytes
+from Cryptodome.Util.number import getPrime, inverse, bytes_to_long, long_to_bytes
 import random
 import math
 from Gaussian_Lattice_Reduction import vector, GLR

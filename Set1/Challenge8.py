@@ -2,7 +2,7 @@
 import base64
 import itertools
 
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 
 _in = open("Data/8.txt", "r").read().split("\n")
 _in = [base64.b16decode(x.upper()) for x in _in]

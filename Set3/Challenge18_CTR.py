@@ -1,6 +1,6 @@
 import base64
 
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 
 ##WARNING
 ## for some reason the transform is corrupted as fuck, prob because of the fact that its prob gon be encoding in utf

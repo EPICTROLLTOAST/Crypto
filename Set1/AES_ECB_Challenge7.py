@@ -1,5 +1,5 @@
 import base64
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 
 
 _in = """CRIwqt4+szDbqkNY+I0qbDe3LQz0wiw0SuxBQtAM5TDdMbjCMD/venUDW9BL

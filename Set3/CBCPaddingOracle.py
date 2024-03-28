@@ -1,8 +1,8 @@
 import base64
 import random
 
-from Crypto.Cipher import AES
-from Crypto.Random import get_random_bytes
+from Cryptodome.Cipher import AES
+from Cryptodome.Random import get_random_bytes
 
 from Set2.Challenge9_PKCS import PKCS_pad, PKCS_validate
 

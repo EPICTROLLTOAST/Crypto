@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 import os
 import math
 

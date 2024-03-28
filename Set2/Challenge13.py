@@ -4,8 +4,8 @@ c13.py
 Cryptopals Set 2, Challenge 13
 """
 
-from Crypto.Cipher import AES
-from Crypto.Random import get_random_bytes
+from Cryptodome.Cipher import AES
+from Cryptodome.Random import get_random_bytes
 
 def pkcs7(bs, block_size):
     """

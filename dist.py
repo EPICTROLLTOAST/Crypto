@@ -1,7 +1,7 @@
 import math
 from decimal import *
 
-from Crypto.Util.number import getRandomNBitInteger
+from Cryptodome.Util.number import getRandomNBitInteger
 
 FLAG = "fake_flag"
 

@@ -149,24 +149,25 @@ if __name__ == '__main__':
     Jk8DCkkcC3hFMQIEC0EbAVIqCFZBO1IdBgZUVA4QTgUWSR4QJwwRTWM="""
 
 
-    _in = base64.b64decode(_in)
+    _in = b"Xn01RO\x05\x11s-8f\x15j\x1cX7Zl()\x00.U&8wpV|\x01b=3s\x1b)\x7f"
+    print(len(_in))
     small = 2
     big = 40
 
 
-    normalised_distances = []
-    for x in range(small, big):
-        b1 = _in[0:x]
-        b2 = _in[x: x * 2]
-        b3 = _in[x*2:x*3]
-        b4 = _in[x*3:x*4]
-        normalised_distance = (hammingDistance(b1,b2) + hammingDistance(b2,b3) + hammingDistance(b3,b4))/x
-        normalised_distances += [[normalised_distance, x]]
-    normalised_distances = sorted(normalised_distances, key = lambda index:index[0])
-    print(normalised_distances)
+    #normalised_distances = []
+    #for x in range(small, big):
+    #    b1 = _in[0:x]
+    #    b2 = _in[x: x * 2]
+    #    b3 = _in[x*2:x*3]
+    #    b4 = _in[x*3:x*4]
+    #    normalised_distance = (hammingDistance(b1,b2) + hammingDistance(b2,b3) + hammingDistance(b3,b4))/x
+    #    normalised_distances += [[normalised_distance, x]]
+    #normalised_distances = sorted(normalised_distances, key = lambda index:index[0])
+    #print(normalised_distances)
 
-    for stuff in normalised_distances[:5]: #top 5
-        size = stuff[1]
+    for stuff in [38]: #top 5
+        size = stuff
         blocks = []
         for x in range(0, len(_in), size):
             if x + size >= len(_in): ##exceeds the length

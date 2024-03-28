@@ -3,7 +3,7 @@ import itertools
 import string
 from multiprocessing import Pool
 from functools import partial
-from Crypto.Cipher import DES
+from Cryptodome.Cipher import DES
 import array
 # import sys
 

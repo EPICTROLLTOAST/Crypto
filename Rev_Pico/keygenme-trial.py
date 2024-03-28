@@ -3,7 +3,7 @@
 #============================================================================#
 
 import hashlib
-from cryptography.fernet import Fernet
+from Cryptodomegraphy.fernet import Fernet
 import base64
 
 
